@@ -1,0 +1,33 @@
+.container{
+    width: 80%;
+    height: auto;
+    margin-top: 8%;
+    background: var(--color-font);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+button{
+    background:var(--general);
+    color: black;
+    border: none;
+}
+
+label{
+    color: black;
+}
+
+button{
+    border: 3px solid var(--secundario);
+    border-radius: 10px;
+    background-color: var(--terciario);
+    transition: .2s;
+    color: black;
+}
+
+button:hover{
+    background: var(--general);
+    color: black;
+    transform: scale(1.1);
+    border: 3px solid var(--secundario);
+}

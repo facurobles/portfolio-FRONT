@@ -1,0 +1,25 @@
+
+.circulo{
+    width: 140px;
+    height: 140px;
+    margin: 5px;
+    float: left;
+    margin-left: 30px;
+}
+
+.contenedor{
+    margin-left: 10%;
+    margin-top: 70px;
+    margin-bottom: 150px;
+    width: 80%;
+    height: auto;
+    background: var(--secundario);
+    padding: 20px;
+}
+
+
+h1{
+    font-family: var(--font-family);
+    color: var(--color-font);
+    font-size: 35px;
+}

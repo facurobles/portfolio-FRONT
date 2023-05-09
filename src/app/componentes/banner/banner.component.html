@@ -1,0 +1,70 @@
+<div class="container">    
+    <div class="banner">
+        <div class="binarios" [ngStyle]="presentacion">
+            <div>
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+                <h2>1</h2>    
+            </div>
+            <div> 
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+                <h3>0</h3>
+            </div>
+        </div>
+
+       <img src="../../../assets/fotor1.png" alt="foto perfil" id="perfil"> 
+        
+
+        <span class="texto" [ngStyle]="presentacion">
+            <h1 id="hola">Hola <span id="user">{{user}}</span>!!! Soy..</h1><br>
+            <h1 id="nombre">{{persona.nombre}} {{persona.apellido}}</h1><br>
+            <h1 id="titulo">Full Stack Developer</h1>
+            <h1 id="parrafo">Soy Facu, FullStack Developer y estudiante de Ingeniería en Sistemas de la Información.<br>
+                En busca de crecer y adquirir experiencias en este mundo de las IT que tanto me apasiona.
+            </h1>
+        </span>
+    </div>
+    
+    <div class="botones">
+        <button (click)="rojo()"></button>
+        <button (click)="azul()"></button>
+        <button (click)="verde()"></button>
+        <button (click)="agrandar()"><i class="fa-sharp fa-solid fa-greater-than"></i></button>
+        <button (click)="reducir()"><i class="fa-sharp fa-solid fa-less-than"></i></button>                    
+    </div>
+</div>

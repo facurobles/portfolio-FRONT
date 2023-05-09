@@ -1,0 +1,21 @@
+.seccion{
+    height: 100vh;
+    margin-top: 70px;
+}
+
+img{
+    width: 80%;
+    height: 80%;
+    transition-duration: 0.5s;
+}
+
+img:hover{
+    filter: gray;
+    -webkit-filter: grayscale(1);
+}
+
+h2{
+    font-family: var(--font-family);
+    color: var(--color-font);
+    
+}

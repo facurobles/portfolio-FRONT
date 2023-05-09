@@ -1,0 +1,25 @@
+<div class="container-fuid fixed-top header">
+    <div class="row">
+        <div class="col-5 ">
+            <a target="_blank" href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"><img src="../../../assets/APLogo-20-20.png" ></a> 
+            <h1><b>#YoProgramo</b></h1>
+        </div>
+        <div class="col-7 social ">
+            <div [ngClass]="{'vertical': valor, 'horizontal': !valor}">
+                <a routerLink="banner" routerLinkActive="active-link"><b>Inicio</b></a>
+                <a routerLink="experiencia" routerLinkActive="active-link"><b>Experiencias</b></a>
+                <a routerLink="educacion" routerLinkActive="active-link"><b>Educacion</b></a>
+                <a routerLink="skills" routerLinkActive="active-link"><b>Skills</b></a>
+                <a routerLink="proyectos" routerLinkActive="active-link"><b>Proyectos</b></a>
+                <a title="Cerrar sesion" (click)="onLogOut()" *ngIf="isLogged" routerLink="banner"><i class="fa-solid fa-right-from-bracket"></i></a>
+                <a title="Iniciar sesion" routerLink="login" routerLinkActive="active-link" *ngIf="!isLogged"><i class="fa-solid fa-user"></i></a>
+                
+            </div>
+            <div id="menu">
+                <button (click)="mostrar()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+        
+    </div>  
+</div>
+

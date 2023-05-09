@@ -1,0 +1,33 @@
+<div class="container">
+    <form>
+      <form (ngSubmit)="sendEmail()" novalidate #f="ngForm">
+
+        <h1>Contactame</h1>
+        <h6>*campos obligatorios</h6>
+
+        <!-- Nombre input -->
+        <div class="form-outline mb-3">
+            <input type="text" for="nombre" name="name" class="form-control" [(ngModel)]="nombre"
+              required>
+            <label class="form-label" for="nombre"><b>Nombre y apellido*</b></label>
+        </div>
+
+        <!-- Email input -->
+        <div class="form-outline mb-3">
+          <input type="email" for="email" name="email" class="form-control" [(ngModel)]="email"
+            required>
+          <label class="form-label" for="email"><b>Email*</b></label>
+        </div>
+  
+        <!-- Password input -->
+        <div class="form-outline mb-1">
+          <textarea type="text" for="mensaje" name="mansaje" class="form-control" [(ngModel)]="mensaje"></textarea>
+          <label class="form-label" for="password"><b>Mensaje*</b></label>
+        </div>
+  
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4" >Enviar</button>
+      </form>
+    
+    </form>
+</div>

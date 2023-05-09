@@ -1,0 +1,40 @@
+<div class="container">
+    <form>
+      <form #f="ngForm" (ngSubmit)="login()" novalidate>
+
+        <h1>Regístrate</h1>
+        <h6>*campos obligatorios</h6>
+
+        <!-- Nombre input -->
+        <div class="form-outline mb-3">
+            <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre" class="form-control"
+              required>
+            <label class="form-label" for="nombre"><b>Nombre y apellido*</b></label>
+        </div>
+
+        <!-- Nombre de usuario input -->
+        <div class="form-outline mb-3">
+            <input type="text" id="nombreUsuario" name="nombreUsuario" [(ngModel)]="nombreUsuario" class="form-control"
+              required>
+            <label class="form-label" for="nombreUsuario"><b>Nombre de usuario*</b></label>
+        </div>
+
+        <!-- Email input -->
+        <div class="form-outline mb-3">
+          <input type="email" id="email" name="email" [(ngModel)]="email" class="form-control"
+            required>
+          <label class="form-label" for="email"><b>Email*</b></label>
+        </div>
+  
+        <!-- Password input -->
+        <div class="form-outline mb-3">
+          <input type="password" id="password" name="password" [(ngModel)]="password" class="form-control" required>
+          <label class="form-label" for="password"><b>Password*</b></label>
+        </div>
+  
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4" >Registrar</button>
+      </form>
+    
+    </form>
+  </div>

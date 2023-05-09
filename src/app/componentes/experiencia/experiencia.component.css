@@ -1,0 +1,130 @@
+.contenedor{
+    margin-top: 15%;
+    margin-bottom: 10%;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+    background: var(--secundario);
+}
+
+.cont{
+    display:grid;
+}
+
+/*titulo exper*/
+h1{
+    color: var(--color-font);
+    padding-left: 30px;
+}
+
+#sumar{
+    font-size: 40px;
+    color: gray;
+    border: none;
+    background:none;
+    transition: .3s;
+    
+}
+#sumar:hover{
+    color: var(--general);
+    transform: scale(1.2);
+    
+}
+
+
+/*Experiencia*/
+
+
+h2{
+    color: black;
+    font-size: 20px;
+}
+
+h3{
+    color: black;
+    font-size: 15px;
+}
+
+.exper{
+    min-width: 40%;
+    width: 40%;
+    min-height: 200px;
+    height: auto;
+    padding: 15px;
+    background: var(--terciario);
+    margin: 1%;
+    margin-left: 5%;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+    float: left;
+}
+.exper:hover{
+    background: rgb(172, 172, 172);
+    box-shadow: 0 0 15px  var(--general);
+    
+}
+
+/*form experiencia nueva*/
+
+label{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+input{
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    width: 60%;
+}
+
+
+button{
+    border: none;
+    background: none;
+    transition: .3s;
+    margin-left: 10px;
+    
+}
+#editar:hover{
+    transform: scale(1.5);
+    color: rgb(28, 0, 184);
+}
+
+#borrar:hover{
+    transform: scale(1.5);
+    color: rgb(209, 0, 0);
+}
+
+#agregar{
+    border: 3px solid var(--secundario);
+    border-radius: 10px;
+    background-color: var(--terciario);
+    transition: .3s;
+}
+
+#agregar:hover{
+    background: var(--general);
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+    .cont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exper{
+        width: 90%;
+    }
+
+    .contenedor{
+        margin-top: 20%;
+        margin-bottom: 25%;
+    }
+}

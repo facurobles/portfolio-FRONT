@@ -1,0 +1,26 @@
+<!--Editar una educacion-->
+<div class="row container">
+    <div >
+        <h1>Editar educacion:</h1>
+    </div>
+    <div class="row educa" *ngIf="educa">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <b><label for="nombreE">Institución:</label></b>
+            <input type="text" id="nombreE" name="nombreE" [(ngModel)]="educa.nombreEd" required> <br>
+    
+            <b><label for="nivelEd">Nivel:</label></b>
+            <input type="text" id="nivelEd" name="nivelEd" [(ngModel)]="educa.nivelEd" required><br>
+    
+            <b><label for="periodoEd">Periodo:</label></b>
+            <input type="text" id="periodoEd" name="periodoEd" [(ngModel)]="educa.periodoEd" required><br>
+    
+            <b><label for="ubicacionEd">Ubicación:</label></b>
+            <input type="text" id="ubicacionEd" name="ubicacionEd" [(ngModel)]="educa.ubicacionEd" required><br>
+    
+            <b><label for="tituloEd">Título:</label></b>
+            <input type="text" id="tituloEd" name="tituloEd" [(ngModel)]="educa.tituloEd" required><br>
+    
+            <button>Guardar cambios</button>
+        </form>
+    </div>
+</div>

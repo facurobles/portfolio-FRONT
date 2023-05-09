@@ -1,0 +1,45 @@
+
+.seccion{
+    height: 100vh;
+}
+
+.contenedor{
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 0 5px gray;
+}
+
+h1{
+    float:left;
+}
+
+#sumar{
+    font-size: 35px;
+    padding-left: 10px ;
+    color: gray;
+}
+
+
+
+/*Experiencias*/
+
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 15px;
+}
+
+.educ{
+    width: 450px;
+    height: 200px;
+    float: left;
+    padding: 15px;
+    background: #8b8b8b;
+    margin: 5px;
+    border-radius: 5%;
+}

@@ -1,0 +1,31 @@
+.container{
+    width: 70%;
+    height: auto;
+    margin-top: 60px;
+    background: var(--color-font);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+button{
+    border: 3px solid var(--secundario);
+    border-radius: 10px;
+    background-color: var(--terciario);
+    transition: 0.1s;
+    color: black;
+}
+
+button:hover{
+    background: var(--general);
+    color: black;
+    transform: scale(1.1);
+    border: 3px solid var(--secundario);
+}
+
+h1{
+    float: left;
+}
+
+h6{
+    text-align: right;
+}

@@ -1,0 +1,42 @@
+/*SOCIAL*/
+.social{
+    position: fixed;
+}
+
+/* Invisible texto */
+h6{
+    display:none; 
+    transition: all .5s;
+    color: white;
+  }
+  /* Visible texto */
+#login:hover > h6{
+    display:flex;
+    position: absolute;
+    transition: all .5s;
+  }
+
+
+i{
+    font-size: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
+    color: var(--color-font);
+    transition-duration: 0.3s;
+}
+i:hover{
+    transform: scale(1.5);
+    color: var(--general);
+}
+
+a{
+    display: block;
+}
+
+
+
+@media screen and (max-width: 410px) {
+        i{
+            font-size: 20px;
+        }
+}

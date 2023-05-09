@@ -1,0 +1,26 @@
+<!--Editar una experiencia-->
+<div class="row container">
+    <div >
+        <h1>Editar experiencia:</h1>
+    </div>
+    <div class="row exper" *ngIf="expLab">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <b><label for="nombreE">Nombre del puesto:</label></b>
+            <input type="text" id="nombreE" name="nombreE" [(ngModel)]="expLab.nombreE" required> <br>
+    
+            <b><label for="empresaE">Empresa:</label></b>
+            <input type="text" id="empresaE" name="empresaE" [(ngModel)]="expLab.empresaE" required><br>
+    
+            <b><label for="periodoE">Periodo:</label></b>
+            <input type="text" id="periodoE" name="periodoE" [(ngModel)]="expLab.periodoE" required><br>
+    
+            <b><label for="ubicacionE">Ubicación:</label></b>
+            <input type="text" id="ubicacionE" name="ubicacionE" [(ngModel)]="expLab.ubicacionE" required><br>
+    
+            <b><label for="descripcionE">Tareas:</label></b>
+            <input type="text" id="descripcionE" name="descripcionE" [(ngModel)]="expLab.descripcionE" required><br>
+    
+            <button>Guardar cambios</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+
+.seccion{
+    height: 8vh;
+    border-top: solid 2px var(--secundario);
+    text-align: center;
+    background: var(--primario);
+}
+
+h6{
+    font-family: var(--font-family);
+    color: var(--color-font);
+}

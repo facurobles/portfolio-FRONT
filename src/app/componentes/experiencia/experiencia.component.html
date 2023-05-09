@@ -1,0 +1,55 @@
+<div class="container seccion">
+    <div class="container contenedor">
+
+        <div class="row">
+            <div class="col-10">
+                <h1>Experiencia: </h1>
+            </div>
+            <div class="col-1" >
+                <button id="sumar" title="Agregar nueva experiencia" (click)="funcsumar()"  *ngIf="isLoggedAdmin"><i class="fa-solid fa-circle-plus"></i></button>
+            </div>
+        </div>
+
+
+        <div class="cont">
+            <div >
+                <div class="col-6 exper" *ngFor="let Exp of expe">
+                    <h2><u><b> {{Exp.nombreE}} </b></u></h2>
+                    <h3><b>Empresa: </b>{{Exp.empresaE}}</h3>
+                    <h3><b>Periodo: </b> {{Exp.periodoE}}</h3>
+                    <h3><b>Ubicación: </b> {{Exp.ubicacionE}}</h3>
+                    <h3><b>Tareas: </b> {{Exp.descripcionE}}</h3>
+                    <button title="Editar" id="editar" routerLink="/editexp/{{Exp.id}}"><i class="fa-solid fa-pen" *ngIf="isLoggedAdmin"></i></button>
+                    <button title="Eliminar" id="borrar" (click)="delete(Exp.id)"><i class="fa-solid fa-trash" *ngIf="isLoggedAdmin"></i></button>
+                </div>         
+                
+                <!--Añadir una experiencia nueva-->
+                <div class="col-6 exper" *ngIf="sumar">
+                    <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                        <b><label>Nombre del puesto:</label></b>
+                        <input type="text" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required> <br>
+    
+                        <b><label>Empresa:</label></b>
+                        <input type="text" id="empresaE" name="empresaE" [(ngModel)]="empresaE" required><br>
+    
+                        <b><label>Periodo:</label></b>
+                        <input type="text" id="periodoE" name="periodoE" [(ngModel)]="periodoE" required><br>
+    
+                        <b><label>Ubicación:</label></b>
+                        <input type="text" id="ubicacionE" name="ubicacionE" [(ngModel)]="ubicacionE" required><br>
+    
+                        <b><label>Tareas:</label></b>
+                        <input type="text" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required><br>
+    
+                        <button id="agregar">Agregar</button>
+                    </form>
+                </div>
+            </div>
+            
+            
+        </div>
+
+
+
+    </div>
+</div>
